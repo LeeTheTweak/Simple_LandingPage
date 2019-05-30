@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "UTF-8"/>
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0"/>
+<title>ecoNET</title>
+<link rel = "icon" href = "src/images/favicon.ico"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href = "public/index.css" type = "text/css" rel = "stylesheet"/>
+</head>
+
+<body>
+
+    <!-- The Header Area -->
+    <header>
+        <!-- The top area of the header -->
+        <div id = "top-area">
+            <!-- Logo Container-->
+            <div id = "logo">
+                <img src = "src/images/Logo.png" alt = "The ecoNET logo"/>
+            </div>
+            <!-- The phone number container -->
+            <div id = "phone-number">
+                <p>(888) 544-0372</p>
+            </div>
+        </div>
+    </header>
+    <!-- End of the header -->
+
+    <!-- The Mid-Contents Area -->
+    <section id = "mid-contents">
+        <!-- The Left section of the mid-contents area -->
+        <div id = "left-contents-wrapper">
+            <div id = "app-details-area">
+                <h2>Environmental Analytics Software</h2>
+                <p>Understand every aspect of your town's ecosystem.</p>
+                <p>Better ecosystem = a better way of life.</p>
+            </div>
+            <div id = "landscape-image-area">
+                <img src = "src/images/flatNeighborhoodGraphic.png"/>
+                <a href = "#what-is-econet">What is it?</a>
+            </div>
+        </div>
+
+        <!-- The right section of the mid-contents area -->
+        <div id = "right-contents-wrapper">
+            <div id = "form-area">
+                <form>
+                    <label>FIRST NAME:<span>*</span></label>
+                    <input type = "text" required/>
+                    <label>LAST NAME:<span>*</span></label>
+                    <input type = "text" required/>
+                    <label>BUSINESS EMAIL:<span>*</span></label>
+                    <input type = "email" required/>
+                    <label>CITY:<span>*</span></label>
+                    <input name = "city_name" type = "text" required/>
+                    <label>TOWN SIZE:<span>*</span></label>
+                    <input name = "town_size" type = "number" required/>
+                    <label>PHONE NUMBER:<span>*</span></label>
+                    <input name = "phone_number" type = "number" required/>
+                    <input id ="submitButton" type = "submit" value = "Get Started"/>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id = "what-is-econet-contents">
+        <div id = "what-is-econet">
+            <div id = "description" data-aos = "zoom-in-down">
+                <p>What Is ecoNET?</p>
+                <p>
+                    Imagine being a mayor of a town or city where you can gather information 
+                    on it's environment. Maybe the town needs work on it's public works, or maybe
+                    it's vegetation. Or, maybe there needs to be a better solution for 
+                    cleaner air in the area, and a better management for forest preserves.
+                    ecoNET, provides a network that can store all of a town's ecosystem 
+                    to make it easier to understand every aspect of it. Saving you time!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id = "dirt-area">
+        <!-- ONLY CSS STYLING -->  
+    </section>
+
+    <footer>
+        <div id = "footer-contents-wrapper">
+            <div id = "footer-image-area">
+                <img src = "src/images/title.png"/>
+            </div>
+            <div id = "credits-area">
+                <p>Completely designed and developed by<br/>Christopher Leveston</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

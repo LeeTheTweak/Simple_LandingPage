@@ -1,0 +1,250 @@
+// COLORS
+@import "colors.scss"; /** Importing the 'colors' stylesheet */
+
+// Beginning of the body 
+html, body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+/** BEGINNING OF THE HEADER ********************/
+header {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    #top-area {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        margin: auto;
+        padding: 10px;
+
+        #logo {
+            img {
+                width: 150px;
+            }
+        }
+
+        #phone-number {
+            p {
+                font-size: 30px;
+                color: $darkGreyText;
+            }
+        }
+    }
+}
+/** END OF THE HEADER ***************************/
+
+/** BEGINNING OF THE CONTENTS *************************************/
+#mid-contents {
+    width: auto;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mid-contents {
+    /** THE LEFT AREA *************/
+    #left-contents-wrapper {
+        #app-details-area {
+            text-align: center;
+            h2 {
+                margin-bottom: 0;
+                color: $greenText;
+                font-family: sans-serif;
+                font-size: 30px;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: sans-serif;
+                font-size: 20px;
+                color: $darkGreyText;
+            }
+        }
+
+        #landscape-image-area {
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 800px;
+            }
+            a {
+                text-align: center;
+                padding: 10px 20px;
+                border: 1px solid $greenText;
+                border-radius: 100px;
+                width: 150px;
+                margin: auto;
+                color: $greenText;
+                font-family: sans-serif;
+                font-size: 500;
+                text-decoration: none;
+                transition: .3s ease;
+                &:hover {
+                    background-color: $lightGreen;
+                    color: $buttonText;
+                }
+            }
+        }
+    }
+    /** THE RIGHT AREA ********************/
+    #right-contents-wrapper {
+        #form-area {
+            width: auto;
+            form {
+                width: 250px;
+                border: 3px solid $greenText;
+                border-radius: 5px;
+                padding: 10px 30px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 3px;
+                    color: $darkGreyText;
+                }
+
+                span {
+                    color: $formStars;
+                    padding-left: 2px;
+                }
+
+                input {
+                    margin-bottom: 40px;
+                    border: none;
+                    border-bottom: 1px solid $darkGreyText;
+                    &:focus {
+                        outline-width: 0;
+                    }
+                }
+                #submitButton {
+                    background-color: $greenText;
+                    border: none;
+                    color: $buttonText;
+                    width: auto;
+                    margin: auto;
+                    padding: 7px;
+                    font-size: sans-serif;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    transition: .2s ease-in-out;
+                    &:hover {
+                        background-color: $darkGreen;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+//Media Query for max-width of 768px
+@media only screen and (max-width: 768px) {
+    #mid-contents {
+        #left-contents-wrapper {
+            #app-details-area {
+                h2 {
+                    font-size: 5vw;
+                }
+                p {
+                    font-size: 4vw;
+                }
+            }
+            #landscape-image-area {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/** END OF THE LEFT & RIGHT AREA ***************************/
+
+
+/** START OF WHAT IS ECONET CONTENTS******************/
+#what-is-econet-contents {
+    width: auto;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: $whatisBackground;
+    #what-is-econet {
+        width: 550px;
+        margin: auto;
+        text-align: center;
+        color: $descriptionText;
+        #description {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            p:nth-child(1) {
+                line-height: 2;
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: 800;
+                color: $greenText;
+            }
+            p:nth-child(2) {
+                font-family: sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+#dirt-area {
+    width: auto;
+    height: 30px;
+    background-color: $dirt;
+}
+@media only screen and (max-width: 425px) {
+    #what-is-econet-contents {
+        #what-is-econet {
+            width: 100%;
+            #description {
+
+                p:nth-child(1) {
+
+                }
+                p:nth-child(2) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+/** FOOTER AREA ******************************/
+footer {
+    background-color: $darkGreyText;
+    padding: 10px;
+}
+#footer-contents-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    #footer-image-area {
+
+        img {
+            width: 300px;
+        }
+    }
+    #credits-area {
+
+        p {
+            color: white;
+            text-align: center;
+        }
+    }
+}

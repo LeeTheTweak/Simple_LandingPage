@@ -1,0 +1,173 @@
+/** Importing the 'colors' stylesheet */
+html, body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+/** BEGINNING OF THE HEADER ********************/
+header {
+  width: auto;
+  padding: 0;
+  margin: 0; }
+
+header #top-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: auto;
+  margin: auto;
+  padding: 10px; }
+  header #top-area #logo img {
+    width: 150px; }
+  header #top-area #phone-number p {
+    font-size: 30px;
+    color: #4e4e4e; }
+
+/** END OF THE HEADER ***************************/
+/** BEGINNING OF THE CONTENTS *************************************/
+#mid-contents {
+  width: auto;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+
+#mid-contents {
+  /** THE LEFT AREA *************/
+  /** THE RIGHT AREA ********************/ }
+  #mid-contents #left-contents-wrapper #app-details-area {
+    text-align: center; }
+    #mid-contents #left-contents-wrapper #app-details-area h2 {
+      margin-bottom: 0;
+      color: #219221;
+      font-family: sans-serif;
+      font-size: 30px; }
+    #mid-contents #left-contents-wrapper #app-details-area p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: sans-serif;
+      font-size: 20px;
+      color: #4e4e4e; }
+  #mid-contents #left-contents-wrapper #landscape-image-area {
+    display: flex;
+    flex-direction: column; }
+    #mid-contents #left-contents-wrapper #landscape-image-area img {
+      width: 800px; }
+    #mid-contents #left-contents-wrapper #landscape-image-area a {
+      text-align: center;
+      padding: 10px 20px;
+      border: 1px solid #219221;
+      border-radius: 100px;
+      width: 150px;
+      margin: auto;
+      color: #219221;
+      font-family: sans-serif;
+      font-size: 500;
+      text-decoration: none;
+      transition: .3s ease; }
+      #mid-contents #left-contents-wrapper #landscape-image-area a:hover {
+        background-color: #93d493;
+        color: white; }
+  #mid-contents #right-contents-wrapper #form-area {
+    width: auto; }
+    #mid-contents #right-contents-wrapper #form-area form {
+      width: 250px;
+      border: 3px solid #219221;
+      border-radius: 5px;
+      padding: 10px 30px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column; }
+      #mid-contents #right-contents-wrapper #form-area form label {
+        margin-bottom: 3px;
+        color: #4e4e4e; }
+      #mid-contents #right-contents-wrapper #form-area form span {
+        color: red;
+        padding-left: 2px; }
+      #mid-contents #right-contents-wrapper #form-area form input {
+        margin-bottom: 40px;
+        border: none;
+        border-bottom: 1px solid #4e4e4e; }
+        #mid-contents #right-contents-wrapper #form-area form input:focus {
+          outline-width: 0; }
+      #mid-contents #right-contents-wrapper #form-area form #submitButton {
+        background-color: #219221;
+        border: none;
+        color: white;
+        width: auto;
+        margin: auto;
+        padding: 7px;
+        font-size: sans-serif;
+        font-weight: bold;
+        border-radius: 3px;
+        transition: .2s ease-in-out; }
+        #mid-contents #right-contents-wrapper #form-area form #submitButton:hover {
+          background-color: #277227;
+          cursor: pointer; }
+
+@media only screen and (max-width: 768px) {
+  #mid-contents #left-contents-wrapper #app-details-area h2 {
+    font-size: 5vw; }
+  #mid-contents #left-contents-wrapper #app-details-area p {
+    font-size: 4vw; }
+  #mid-contents #left-contents-wrapper #landscape-image-area img {
+    width: 100%; } }
+/** END OF THE LEFT & RIGHT AREA ***************************/
+/** START OF WHAT IS ECONET CONTENTS******************/
+#what-is-econet-contents {
+  width: auto;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #528fff; }
+  #what-is-econet-contents #what-is-econet {
+    width: 550px;
+    margin: auto;
+    text-align: center;
+    color: #4e4e4e; }
+    #what-is-econet-contents #what-is-econet #description {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px; }
+      #what-is-econet-contents #what-is-econet #description p:nth-child(1) {
+        line-height: 2;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        color: #219221; }
+      #what-is-econet-contents #what-is-econet #description p:nth-child(2) {
+        font-family: sans-serif;
+        font-size: 20px;
+        line-height: 1.5; }
+
+#dirt-area {
+  width: auto;
+  height: 30px;
+  background-color: #b38344; }
+
+@media only screen and (max-width: 425px) {
+  #what-is-econet-contents #what-is-econet {
+    width: 100%; }
+    #what-is-econet-contents #what-is-econet #description p:nth-child(2) {
+      font-size: 15px; } }
+/** FOOTER AREA ******************************/
+footer {
+  background-color: #4e4e4e;
+  padding: 10px; }
+
+#footer-contents-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; }
+  #footer-contents-wrapper #footer-image-area img {
+    width: 300px; }
+  #footer-contents-wrapper #credits-area p {
+    color: white;
+    text-align: center; }
+
+/*# sourceMappingURL=index.css.map */
